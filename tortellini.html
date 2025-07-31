@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="icon" type="img/icons" href="./img/logo_small.png">
+
+    <link rel="stylesheet" href="./tortellini.css">
+    <link rel="stylesheet" href="./templates/header1.css">
+    <link rel="stylesheet" href="./templates/footer.css">
+
+    <script src="./tortellini.js"></script>
+    <script src="./templates/header.js"></script>
+
+
+    <title>Tortellini alla Panna</title>
+
+</head>
+
+<body onload="includeHTML()">
+
+    <div w3-include-html="./templates/header.html"></div>
+
+    <main class="mainContainer">
+        <div>
+            <h1>Tortellini alla Panna</h1>
+            <img class="headerImg" src="./img/tortellini.jpg">
+
+            <div class="requirements">
+                <span class="datafields"><img class="icons" src="./img/icons/clock-regular.svg">15 mins</span>
+                <span class="datafields"><img class="icons" src="./img/icons/brain-solid.svg">simpel</span>
+                <span class="datafields"><img class="icons" src="./img/icons/calendar-alt-regular.svg">17.04.2024</span>
+            </div>
+        </div>
+
+        <div>
+            <div class="seperator"></div>
+
+            <div class="ingredients-button">
+                <span>Zutaten für</span>
+                <input min="1" max="50" class="input" id="inputfield" type="number" value="2">
+                <button class="button" onclick="getAmount()">Portionen</button>
+            </div>
+
+            <table class="table">
+                <tr>
+                    <td id="ingredient1">250</td>
+                    <td>g Tortellini</td>
+                </tr>
+                <tr>
+                    <td id="ingredient2">2</td>
+                    <td>g Salz</td>
+                </tr>
+                <tr>
+                    <td id="ingredient3">20</td>
+                    <td>g Butter</td>
+                </tr>
+                <tr>
+                    <td id="ingredient4">2</td>
+                    <td>EL Olivenöl</td>
+                </tr>
+                <tr>
+                    <td id="ingredient5">100</td>
+                    <td>g Kochschinken</td>
+                </tr>
+                <tr>
+                    <td id="ingredient6">250</td>
+                    <td>ml Sahne</td>
+                </tr>
+                <tr>
+                    <td id="ingredient7">2</td>
+                    <td>Eigelb</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Prise Muskatnuss</td>
+                </tr>
+                <tr>
+                    <td id="ingredient8">60</td>
+                    <td>g geriebener Hartkäse</td>
+                </tr>
+            </table>
+        </div>
+
+        <div>
+            <h2>Zubereitung</h2>
+
+            <div class="time">
+                <span class="datafields"><img class="icons" src="./img/icons/clock-regular.svg">ca. 15</span>
+                <span class="datafields"><img class="icons" src="./img/icons/clock-regular.svg">Gesamtzeit ca. 15
+                    Minuten</span>
+            </div>
+
+            <p>Die Tortellini in einem Topf mit kochendem und leicht gesalzenem Wasser nach Packungsangabe abkochen.
+                Währenddessen die Butter und das Olivenöl in einem Topf oder einer Pfanne langsam erhitzen.<br><br>
+                Den Schinken würfeln oder in Streifen schneiden, zum Fett hinzugeben und sanft darin anbraten. Mit der
+                Hälfte der Sahne ablöschen, einmal aufkochen und dann auf kleiner Stufe köcheln lassen.<br><br>
+                Die andere Hälfte der Sahne in einer Schüssel mit dem Eigelb, der geriebenen Muskatnuss und dem Käse
+                verrühren. Die Mischung langsam, unter ständigem Rühren, in die Pfanne zur Schinken-Sahne geben. Die
+                Tortellini mit einem Sieb abgießen und in die Sauce geben. Mit dem Salz und dem Pfeffer würzen und mit
+                dem
+                geriebenen Hartkäse bestreuen.
+            </p>
+
+            <h3>Rezept erstellt von</h3>
+            <span class="profile"><img class="profileIMG" src="./img/stephanFoto.jpg">Stephan</span>
+        </div>
+
+    </main>
+
+    <div w3-include-html="./templates/footer.html"></div>
+
+</body>
+
+</html>

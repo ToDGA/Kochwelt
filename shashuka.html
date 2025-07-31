@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="shashuka.css">
+    <script src="shashuka.js"></script>
+    <link rel="stylesheet" href="templates/header1.css">
+    <link rel="stylesheet" href="templates/footer.css">
+    <link rel="icon" type="img/icons" href="./img/logo_small.png">
+
+    <title>Shashuka</title>
+
+</head>
+
+<body onload="includeHTML()">
+
+    <div w3-include-html="./templates/header.html"></div>
+
+    <main class="mainContainer">
+        <div>
+            <h1>Shashuka</h1>
+            <img class="headerImg" src="./img/shakshuka.jpg">
+
+            <div class="requirements">
+                <span class="datafields"><img class="icons" src="./img/icons/clock-regular.svg">45 Minuten</span>
+                <span class="datafields"><img class="icons" src="./img/icons/brain-solid.svg">simpel</span>
+                <span class="datafields"><img class="icons" src="./img/icons/calendar-alt-regular.svg">05.05.2024</span>
+            </div>
+        </div>
+
+        <div>
+            <div class="seperator"></div>
+
+            <div class="ingredients-button">
+                <span>Zutaten für</span>
+                <input min="1" max="50" class="input" id="amount" type="number" placeholder="2">
+                <button class="button" onclick="calculate()">Portionen</button>
+            </div>
+
+            <table id="tableStyle">
+                <tbody>
+                    <tr>
+                        <td id="1st">150</td>
+                        <td>g Zwiebel</td>
+                    </tr>
+                    <tr>
+                        <td id="2nd">1 - 2</td>
+                        <td>Knoblauchzehe</td>
+                    </tr>
+                    <tr>
+                        <td id="3rd">200</td>
+                        <td>g rote Paprika</td>
+                    </tr>
+                    <tr>
+                        <td id="4th">400</td>
+                        <td>g Tomaten</td>
+                    </tr>
+                    <tr>
+                        <td id="5th">100</td>
+                        <td>g Schafskäse</td>
+                    </tr>
+                    <tr>
+                        <td id="6th">2</td>
+                        <td>Eier</td>
+                    </tr>
+                    <tr>
+                        <td id="7th">50</td>
+                        <td>g Koriander</td>
+                    </tr>
+                    <tr>
+                        <td id="8th">2 - 3</td>
+                        <td>EL Olivenöl</td>
+                    </tr>
+                    <tr>
+                        <td id="9th">1/2</td>
+                        <td>TL Kreuzkümmel</td>
+                    </tr>
+                    <tr>
+                        <td id="10th">1/2</td>
+                        <td>TL süßes Paprikapulver</td>
+                    </tr>
+                    <tr>
+                        <td id="11th">1/4</td>
+                        <td>TL Cayennepfeffer</td>
+                    </tr>
+                    <tr>
+                        <td id="12th">1/4</td>
+                        <td>TL Chilipulver</td>
+                    </tr>
+                    <tr>
+                        <td id="13th">n.B.</td>
+                        <td>Salz und Pfeffer</td>
+                    </tr>
+                    <tr>
+                        <td id="14th">n.B.</td>
+                        <td>Brot zum Dippen</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div>
+            <h2>Zubereitung</h2>
+
+            <div class="time">
+                <span class="datafields"><img class="icons" src="./img/icons/clock-regular.svg">ca. 15 Minuten
+                    Vorbereitung</span>
+                <span class="datafields"><img class="icons" src="./img/icons/clock-regular.svg">ca. 30 Miunten
+                    Zubereitung</span>
+            </div>
+
+            <ol>
+                <li>Zwiebel schälen, halbieren und in sehr dünne Scheiben schneiden. Knoblauch ebenfalls schälen und
+                    fein
+                    hacken. Paprika waschen, vierteln, entkernen und quer in feine Streifen schneiden.</li>
+                <li>In einer großen, am besten gusseisernen, Pfanne das Olivenöl erhitzen. Zwiebel und Paprika darin bei
+                    kleiner Hitze für
+                    ca.
+                    20 Minuten schmoren, bis sie schön weich sind. Dabei gelegentlich umrühren. Für die letzten 2-3
+                    Minuten
+                    den
+                    Knoblauch hinzufügen.</li>
+                <li>Kreuzkümmel, Paprikapulver und Cayennepfeffer oder Chilipulver dazugeben und für eine Minuten
+                    rösten.
+                </li>
+                <li>Tomaten aus der Dose zum Gemüse geben und die Tomaten mit dem Pfannenwender vorsichtig zerdrücken.
+                    Alles
+                    mit
+                    Salz und Pfeffer würzen und in ca. 10-15 Minuten einkochen lassen.</li>
+                <li>Den Schafskäse zerbröckeln und unter die Soße rühren.</li>
+                <li>Nun die Eier vorsichtig am Pfannenrand aufschlagen und auf die Tomatensoße gleiten lassen, vorher
+                    ggf.
+                    mit
+                    einem Löffel kleine Mulden in die Soße formen. Etwas Salz und Pfeffer über die Eier geben. Deckel
+                    drauf
+                    und
+                    Eier stocken lassen.</li>
+                <li>Vor dem Servieren mit frischem Koriander bestreuen und dann einfach dicke Scheiben Brot in die Soße
+                    tunken.
+                    Köstlich!!
+                </li>
+            </ol>
+
+            <h3>Rezept erstellt von</h3>
+            <span class="profile"><img class="profileIMG" src="./img/vasili.jpeg">Vasilios I.</span>
+        </div>
+
+    </main>
+
+    <div w3-include-html="./templates/footer.html"></div>
+
+</body>
+
+</html>

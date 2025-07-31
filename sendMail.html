@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="/img/logo_small.png">
+
+    <link rel="stylesheet" href="./templates/header1.css">
+    <link rel="stylesheet" href="./templates/footer.css">
+    <link rel="stylesheet" href="./sendMail.css">
+    <script src="./templates/header.js"></script>
+    <script>
+        async function includeHTML() {
+            let includeElements = document.querySelectorAll('[w3-include-html]');
+            for (let i = 0; i < includeElements.length; i++) {
+                const element = includeElements[i];
+                file = element.getAttribute("w3-include-html"); // "includes/header.html"
+                let resp = await fetch(file);
+                if (resp.ok) {
+                    element.innerHTML = await resp.text();
+                } else {
+                    element.innerHTML = 'Page not found';
+                }
+            }
+        }
+    </script>
+
+    <title>Kontakt</title>
+</head>
+
+<body onload="includeHTML()">
+    <div w3-include-html="./templates/header.html"></div>
+
+
+    <div class="sendInfo">
+        <h2>Wir haben Ihre Mail erhalten und werden uns schnellstmöglich darum kümmern!</h2>
+        <img class="sendMailImg" src="./img/sendMail.jpg" alt="Mail Sending JPG">
+    </div>
+
+    <div class="section-recipes">
+        <h2 class="recipeSubline">Versüßen Sie ihre Wartezeit mit unseren Rezepten:</h2>
+        <div class="section-links">
+
+            <a href="./recipe-kaiserschmarrn.html" class="recipes-link">
+                Kaiserschmarrn
+                <img src="./img/kaiserschmarrn.jpg" alt="Kaiserschmarrn-Bild">
+            </a>
+            <a href="./shashuka.html" class="recipes-link">
+                Shakshuka
+                <img src="./img/shakshuka.jpg" alt="Shakshuka-Bild">
+            </a>
+            <a href="./tortellini.html" class="recipes-link">
+                Tortellini alla Panna
+                <img src="./img/tortellini-groß.jpg" alt="Tortellini alla Panna-Bild">
+            </a>
+
+        </div>
+    </div>
+
+
+    <div w3-include-html="./templates/footer.html"></div>
+</body>
+
+</html>

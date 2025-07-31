@@ -1,0 +1,218 @@
+body {
+    scroll-behavior: smooth;
+    font-family: 'Raleway';
+    margin: 0;
+    overflow-x: hidden;
+}
+
+h1 {
+    font-size: 40px;
+    margin-bottom: 56px;
+}
+
+.mainContainer {
+    max-width: 1440px;
+    margin: 100px auto;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.headerImg {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 16px 16px 16px 16px;
+    margin-bottom: 32px;
+}
+
+.icons {
+    height: 16px;
+    padding-right: 8px;
+}
+
+.requirements {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+
+.timeline {
+    width: 100px;
+    margin-right: 24px;
+    margin-bottom: 32px;
+    display: flex;
+    align-items: center;
+}
+
+.ingredients-button {
+    display: flex;
+    align-items: center;
+}
+
+.input {
+    margin-left: 10px;
+    height: 45px;
+    width: 160px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    text-align: center;
+    border: 1px solid lightgray;
+}
+
+.button {
+    border-style: none;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    height: 48px;
+    width: 160px;
+    background-color: #008000;
+    color: white;
+}
+
+.button:hover {
+    box-shadow: grey 1px 1px 1px 1px;
+    cursor: pointer;
+    background-color: #0b8f0b;
+
+}
+
+table {
+    width: 100%;
+    padding-top: 24px;
+}
+
+tr {
+    padding: 8px 24px;
+    border-radius: 8px;
+}
+
+tbody {
+    display: grid;
+}
+
+h2 {
+    margin: 32px 0;
+}
+
+h3 {
+    margin-top:48px;
+}
+
+.seperator {
+    background-color: #EFEFEF;
+    height: 2px;
+    margin-bottom: 24px;
+}
+
+tr:nth-child(odd) {
+    background-color: #EFEFEF;
+}
+
+.profileIMG {
+    margin-right: 16px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.datafields {
+    padding: 5px 10px;
+    border-radius: 10%;
+    background-color: #EFEFEF;
+    margin-right: 24px;
+    margin-bottom: 32px;
+    display: flex;
+    align-items: center;
+}
+
+.time {
+    display: flex;
+    padding-top: 8px;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    margin-bottom: 64px;
+}
+
+@media (max-width: 500px){
+    .mainContainer{
+        margin: 32px auto;
+    }
+    
+    h1{
+        text-align: center;
+        font-size: 24px;
+        margin-bottom: 24px;
+    }    
+
+    .requirements {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .datafields {
+        margin-right: 0px;
+        margin-bottom: 16px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .ingredients-button {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin: 16px;
+        height: 128px;
+    }
+
+    .input{
+        border-radius: 10px;
+        width: 100%;
+        margin: 0;
+    }
+
+    .button{
+        border-radius: 10px;
+        width: 100%;
+    }
+
+    table{
+        padding-top: 8px;
+    }
+
+    tr{
+        text-align:center;
+    }
+
+    h2 {
+        margin: 24px 0;
+        text-align: center;
+    }
+
+    .time{
+            display: flex;
+            padding-top: 0;
+            flex-direction: column;
+    }
+    h3 {
+        text-align: center;
+        margin-top: 0;
+    }
+
+    .profile {
+        display: flex;
+        align-items: center;
+        margin-bottom: 0;
+        flex-direction: column-reverse;
+    }
+
+    .profileIMG {
+        margin-top: 16px;
+        margin-right: 0;
+    }
+}

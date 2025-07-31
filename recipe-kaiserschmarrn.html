@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kaiserschmarren</title>
+  <link rel="stylesheet" href="recipe-kaiserschmarren.css">
+
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Economica:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+    rel="stylesheet" />
+  <script src="./script.js"></script>
+  <link rel="stylesheet" href="./templates/footer.css">
+  <link rel="stylesheet" href="./templates/header1.css">
+  <link rel="icon" type="img/icons" href="./img/logo_small.png">
+
+</head>
+
+<body onload="includeHTML()">
+
+  <div w3-include-html="./templates/header.html"></div>
+
+  <section class="recipe-of-the-day">
+    <div class="aod-text">
+      <h1>Kaiserschmarren</h1>
+      <img src="./img/kaiserschmarrn.jpg" alt="picture of kaiserschmarrn" class="aod-kaiserschmarren" />
+    </div>
+
+    <div class="tag-line">
+      <p class="tag"><img class="icon" src="./img/icons/clock-regular.svg" alt="Zeit">20 Minuten</p>
+      <p class="tag"><img class="icon" src="./img/icons/brain-solid.svg" alt="Schwierigkeit">Simple</p>
+      <p class="tag"><img class="icon" src="./img/icons/calendar-alt-regular.svg" alt="Zeit">19.05.2024</p>
+    </div>
+
+    <div class="seperator"></div>
+
+    <div class="NumberOfPeople">
+      <p style="padding-right:8px;">Zutaten für</p>
+      <input class="input" type="number" id="amount" min="1" max="10" placeholder="1">
+      <button type="button" onclick="calculate()" href="#" class="btn-text">Portionen</button>
+    </div>
+
+    <table id="table">
+      <tbody>
+        <tr>
+          <td id="1st">300</td>
+          <td>g Mehl</td>
+        </tr>
+        <tr>
+          <td id="2nd">4</td>
+          <td>Eier</td>
+        </tr>
+        <tr>
+          <td id="3rd">90</td>
+          <td>g Zucker</td>
+        </tr>
+        <tr>
+          <td id="4th">2</td>
+          <td>Vanilleschoten</td>
+        </tr>
+        <tr>
+          <td id="5th">50</td>
+          <td>g Preiselbeeren</td>
+        </tr>
+        <tr>
+          <td id="6th">80</td>
+          <td>g Puderzucker</td>
+        </tr>
+        <tr>
+          <td id="7th">300</td>
+          <td>g Butter</td>
+        </tr>
+      </tbody>
+    </table>
+    <br>
+    <h2>Zubereitung</h2>
+    <div class="tag-line-2">
+      <div class="tag">
+        <div class="icon">
+          <img src="./img/icons/clock-regular.svg" alt="Zeit" />
+        </div>
+        <span>Ca.15 Minuten</span>
+      </div>
+      <div class="tag">
+        <div class="icon">
+          <img src="./img/icons/clock-regular.svg" alt="Zeit" />
+        </div>
+        <span>Gesamtzeit 15 Minuten</span>
+      </div>
+    </div>
+
+    <div class="recipe-text">
+      Trenne die Eier. Gib das Eiweiß in eine große Schüssel und das Eigelb in eine separate Schüssel. <br>
+      In die Schüssel mit dem Eigelb füge Milch, Mehl, Zucker und eine Prise Salz hinzu. <br>
+      Mische alles gut, bis ein glatter Teig entsteht. Schlage das Eiweiß steif und hebe es vorsichtig unter den Teig.
+      Optional kannst du jetzt auch die Rosinen unterheben. Erhitze etwas Butter oder Öl in einer großen Pfanne bei
+      mittlerer Hitze. Gieße den Teig in die Pfanne und lasse ihn ein paar Minuten lang stocken, bis die Unterseite
+      goldbraun ist.
+      Zerreiße den Teig dann mit einem Pfannenwender oder Kochlöffel in kleine Stücke.<br>
+      Wende die Stücke um und brate sie auf der anderen Seite, bis sie goldbraun und durchgegart sind.<br>
+      Serviere den Kaiserschmarren heiß, bestreut mit Puderzucker und begleitet von Apfelmus oder Zwetschkenröster.
+    </div>
+
+    <div class="writer-headline">
+      <p>Rezept erstellt von</p>
+    </div>
+
+    <div class="writer">
+      <img src="./img/tobias.png">
+      <span class="name">Tobias</span>
+    </div>
+
+  </section>
+
+  <div w3-include-html="./templates/footer.html"></div>
+
+</body>
+
+<script>
+  function calculate() {
+    let number = document.getElementById('amount').value;
+    if (number < 1)
+      alert('Bitte mindestens 1 Portion angeben!')
+    else {
+      if (number > 50)
+        alert('Bitte weniger als 50 angeben!')
+      else {
+
+        let mehl = 300;
+        let eier = 4;
+        let zucker = 90;
+        let vanilleschoten = 2;
+        let milch = 600;
+        let preiselbeeren = 50;
+        let Puderzucker = 80;
+        let butter = 300;
+        document.getElementById('1st').innerHTML = `${number * mehl}`;
+        document.getElementById('2nd').innerHTML = `${number * eier}`;
+        document.getElementById('3rd').innerHTML = `${number * zucker}`;
+        document.getElementById('4th').innerHTML = `${number * vanilleschoten}`;
+        document.getElementById('5th').innerHTML = `${number * milch}`;
+        document.getElementById('6th').innerHTML = `${number * preiselbeeren}`;
+        document.getElementById('7th').innerHTML = `${number * butter}`;
+      }
+    }
+  }
+
+  function showMenu() {
+    document.getElementById('hamburger-menu').classList.add('show-overlay-menu');
+  }
+
+  function closeMenu() {
+    document.getElementById('hamburger-menu').classList.remove('show-overlay-menu');
+  }
+</script>
+
+</html>

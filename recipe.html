@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ghackets mit Hörnli und Apfelmus</title>
+    <link rel="stylesheet" href="./recipe.css">
+    <link rel="stylesheet" href="./templates/header1.css">
+    <link rel="stylesheet" href="./templates/footer.css">
+    <link rel="icon" type="img/icons" href="./img/logo_small.png">
+
+    <script src="./recipe.js"></script>
+    <script src="./script.js"></script>
+    <script src="./templates/header.js"></script>
+
+
+</head>
+
+<body onload="includeHTML()">
+
+    <div w3-include-html="./templates/header.html"></div>
+
+
+    <section class="recipe-of-the-day">
+        <div class="recipe-head">
+            <h1>Ghackets mit Hörnli und Apfelmus</h1>
+            <img src="./img/recipe-img.jpg" alt="gehaktes mit Hörnli und Apfelmus">
+        </div>
+
+        <div class="cook-info">
+            <p class="info"><img class="svg-icon" src="./img/icons/clock-regular.svg" alt="clock-icon">45min</p>
+            <p class="info"><img class="svg-icon" src="./img/icons/brain-solid.svg" alt="brain-icon">simple</p>
+            <p class="info"><img class="svg-icon" src="./img/icons/calendar-alt-regular.svg"
+                    alt="calendar-icon">20.04.2024</p>
+        </div>
+
+        <div class="separator"></div>
+
+        <div class="portions-number">
+            <p>Zutaten für</p>
+            <input id="portions-ingredients" type="number" min="1" max="10" placeholder="1">
+            <button onclick="addjustIngredients()" class="button">Portionen</button>
+        </div>
+
+        <div class="table">
+            <table>
+                <tbody>
+                    <tr>
+                        <td id="portions1">200</td>
+                        <td>g</td>
+                        <td>Apfelmus</td>
+                    </tr>
+                    <tr>
+                        <td id="portions2">150</td>
+                        <td>g</td>
+                        <td>gehacktes Rindfleisch</td>
+                    </tr>
+                    <tr>
+                        <td id="portions3">0.5</td>
+                        <td>Stk</td>
+                        <td>Zwiebel, gehackt</td>
+                    </tr>
+                    <tr>
+                        <td id="portions4">1</td>
+                        <td>Stk</td>
+                        <td>Knoblauchzehe, gepresst</td>
+                    </tr>
+                    <tr>
+                        <td id="portions5">100</td>
+                        <td>g</td>
+                        <td>Hörnli</td>
+                    </tr>
+                    <tr>
+                        <td id="portions6">25</td>
+                        <td>g</td>
+                        <td>Gruyère</td>
+                    </tr>
+                    <tr>
+                        <td id="portions7">1</td>
+                        <td>EL</td>
+                        <td>Tomatenpüre</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td>Majoran. Thymian, Salz, Pfeffer, Paprika</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="preparation">
+            <h2>Zubereitung</h2>
+
+            <div class="preparation-time">
+                <p class="info"><img class="svg-icon" src="./img/icons/clock-regular.svg" alt="">ca. 15 Minuten</p>
+                <p class="info"><img class="svg-icon" src="./img/icons/clock-regular.svg" alt="">Gesamtzeit ca. 45
+                    Minuten</p>
+            </div>
+        </div>
+        <div class="preparation-text">
+            <p>
+                Fleisch in der heissen Bratbutter anbraten. Hitze reduzieren. Zwiebel, Knoblauch, Kräuter und
+                Tomatenpüree mitbraten.
+                Mit Rotwein und/oder Bouillon ablöschen, würzen. Zugedeckt bei kleiner Hitze 15-20 Minuten
+                köcheln. Kräuterzweige entfernen.
+                Hörnli in reichlich Salzwasser al dente kochen. Abgiessen.
+                Apfelmus in Schälchen verteilen. Hörnli und Gehacktes auf Tellern anrichten, mit Käse bestreuen,
+                garnieren. <br>
+                En Guete!
+            </p>
+        </div>
+
+        <div class="section-author">
+            <h2>Rezept erstellt von</h2>
+            <div class="author">
+                <img src="./img/MartinJaros.png" alt="profile photo">
+                <div>Martin Jaros</div>
+            </div>
+        </div>
+
+    </section>
+
+    <div w3-include-html="./templates/footer.html"></div>
+
+</body>
+
+</html>

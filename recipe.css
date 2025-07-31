@@ -1,0 +1,227 @@
+body {
+    overflow-x: hidden;
+    font-family: "Raleway", sans-serif;
+    font-size: 18px;
+    margin: 0 auto;
+}
+
+.recipe-of-the-day {
+    max-width:1440px;
+    margin: 0 auto;
+    padding: 0 5%;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    text-decoration: none;
+    width:160px;
+    background-color: #0b8f0b;
+    color:white;
+    border:none;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px; 
+  }
+  
+  .button:hover {
+    box-shadow: grey 1px 1px 1px 1px;
+    color: white;
+    cursor: pointer;
+    background-color: #0b8f0b;
+  }
+
+.recipe-head {
+    margin-top: 112px;
+}
+
+.recipe-head img {
+    height: 280px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.cook-info {
+    display: flex;
+    justify-content: flex-start;
+    gap: 46px;
+}
+
+
+.info {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background-color: #e9e9e9;
+    border-radius: 16px;
+    padding: 8px 16px;
+}
+
+.svg-icon {
+    height: 16px;
+    width: 16px;
+}
+
+.separator {
+    height: 2px;
+    background-color: #EFEFEF;
+    margin-top: 80px;
+
+
+}
+
+.portions-number {
+    display: flex;
+    margin: 16px 0;
+    height: 48px;
+}
+
+.portions-number p {
+    padding-right: 16px;
+}
+
+#portions-ingredients {
+    border-width: 1px;
+    text-align: center;
+    font-size: 16px;
+    border-radius: 8px 0 0 8px;
+    width: 160px;
+}
+
+table {
+    width: 100%;
+}
+
+tbody {
+    display: flex;
+    flex-direction: column;
+}
+
+tbody tr, table td {
+    border: 0px solid #ddd;
+    padding: 8px 24px;
+    border-radius: 16px;
+}
+
+tr:nth-child(even) {
+    background-color: #e9e9e9;
+}
+
+.preparation {
+    margin-top: 56px;
+}
+
+.preparation h2 {
+    margin: 0;
+}
+
+.preparation-time {
+    display: flex;
+    gap: 46px;
+}
+
+.author {
+    display: flex;
+    align-items: center;
+    gap: 46px;
+}
+
+.author img {
+    width: 96px;
+    border-radius: 100%;
+    object-fit: cover;
+    height: 96px;
+}
+
+.section-author {
+    margin-top: 56px;
+    margin-bottom: 112px;
+}
+
+/* RESPONSIVE DESIGN 
+
+Handy @media only screen and (min-width: 320px) 
+Tablet @media only screen and (min-width: 768px) 
+PC @media only screen and (min-width: 1200px) */
+
+@media(max-width: 768px) {
+    .recipe-head h1 {
+        text-align: center;
+    }
+
+    .recipe-head img {
+        margin-bottom: 24px;
+}
+
+    .cook-info {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .info {
+        margin: 0;
+    }
+
+    .portions-number {
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+
+    .table {
+        margin-top: 144px;
+    }
+
+    .portions-number {
+        flex-direction: column;
+        gap: 8px;
+        align-items: center;
+    }
+
+    #portions-ingredients {
+        border-radius: 8px;
+        width: 100%;
+        padding: 12px 0;
+    }
+
+    .button {
+        width: 100%;
+        padding: 8px 0;
+        text-align: center;
+        height: 100%;
+        padding: 12px;
+    }
+
+    tbody tr,
+    table td {
+        padding: 4px 10px;
+        border-radius: 16px;
+    }
+
+    .preparation h2 {
+        text-align: center;
+    }
+
+    .preparation-time {
+        gap: 8px;
+        flex-direction: column;
+    }
+
+    .section-author h2 {
+        text-align: center;
+    }
+
+
+    .section-author {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .author {
+        gap: 10px;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+}

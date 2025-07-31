@@ -1,0 +1,318 @@
+body {
+  overflow-x: hidden;
+  font-family: "Raleway";
+  color: black;
+  margin: 0px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  color: #008000;
+  text-decoration: underline;
+  text-underline-offset: 14px;
+}
+
+h1 {
+  font-size: 24px;
+  padding-top: 56px;
+  padding-bottom: 16px;
+}
+
+p {
+  padding-bottom: 8px;
+}
+
+span {
+  font-size: 14px;
+  padding-left: 8px;
+}
+
+h4 {
+  padding-right: 8px;
+  font-weight: lighter;
+}
+
+h3 {
+  margin-bottom: 2px;
+}
+
+.aod-pic {
+  border-radius: 16px;
+  width: 320px;
+  margin-top: 64px;
+}
+
+.aot-text {
+  padding-left: 32px;
+  padding-bottom: 32px;
+  font-size: 16px;
+}
+
+.aod-text {
+  border-radius: 91px;
+}
+
+.aod-kaiserschmarren {
+  width: 100%;
+  object-fit: cover;
+  height: 250px;
+}
+
+.tag-line {
+  display: flex;
+  gap: 16px;
+  width: 100%;
+  padding-top: 24px;
+  padding-bottom: 56px;
+}
+
+.tag-line-2 {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  width: 100%;
+  padding-top: 16px;
+  padding-bottom: 32px;
+}
+
+.tag {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  border-radius: 4px;
+  background-color: #efefef;
+  padding: 8px;
+}
+
+.icon {
+  width: 12px;
+}
+
+.seperator {
+  width: 100%;
+  height: 1px;
+  background-color: #efefef;
+}
+
+.NumberOfPeople {
+  padding-top: 16px;
+  display: flex;
+  flex-direction: row;
+}
+
+.ingredients {
+  padding-top: 0px;
+  margin-left: 108px;
+  margin-right: 136px;
+}
+
+::placeholder {
+  text-align: center;
+}
+
+input {
+  width: 150px;
+  height: 30px;
+}
+
+.input {
+  margin-left: 10px;
+  height: 45px;
+  width: 160px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  text-align: center;
+  border: 1px solid lightgray;
+}
+
+.btn {
+  display: flex;
+  align-items: flex-end;
+  padding-top: 12px;
+  height: 36px;
+  text-decoration: none;
+}
+
+.btn-text:hover {
+  box-shadow: grey 1px 1px 1px 1px;
+  color: white;
+  cursor: pointer;
+  background-color: #0b8f0b;
+
+}
+
+.btn-text {
+  border-style: none;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  height: 48px;
+  width: 160px;
+  background-color: #008000;
+  color: white;
+}
+
+.recipe-of-the-day {
+  max-width: 1440px;
+  margin: 100px auto;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+#table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+table {
+  width: 100%;
+  padding-top: 24px;
+}
+
+tbody {
+  display: flex;
+  flex-direction: column;
+}
+
+tbody tr,table td {
+  padding: 8px 1px;
+  border-radius: 8px;
+}
+
+.amount {
+  padding-right: 4px;
+}
+
+.amount {
+  word-spacing: 1em;
+}
+
+.recipe-text {
+  display: block;
+}
+
+.writer-headline {
+  font-weight: bold;
+}
+
+.writer img {
+  display: flex;
+  border-radius: 50%;
+  width: 50px;
+}
+
+.writer {
+  display: flex;
+  align-items: center;
+}
+
+.table-align {
+  text-align: left;
+}
+
+#table td:first-child {
+  width: 5%;
+  padding-left: 8px;
+}
+
+@media (max-width: 500px) {
+  .recipe-of-the-day {
+    margin: 32px auto;
+  }
+
+  h1 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 24px;
+  }
+
+  .tag-line {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+  }
+
+  .tag-line-2 {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+  }
+
+  .tag {
+    margin-right: 0px;
+    margin-bottom: 16px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .NumberOfPeople {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 16px;
+    height: 128px;
+  }
+
+  .input {
+    border-radius: 10px;
+    width: 100%;
+    margin: 0;
+  }
+
+  .btn-text {
+    border-radius: 10px;
+    width: 100%;
+  }
+
+  table {
+    padding-top: 8px;
+  }
+
+  tr {
+    text-align: center;
+  }
+
+  td {
+    text-align: start;
+    padding: 0;
+  }
+
+  h2 {
+    margin: 24px 0;
+    text-align: center;
+  }
+
+  .time {
+    display: flex;
+    padding-top: 0;
+    flex-direction: column;
+  }
+
+  h3 {
+    text-align: center;
+    margin-top: 0;
+  }
+
+  .writer-headline{
+    display: flex;
+    align-items: center;
+    margin-bottom: 0;
+    flex-direction: column-reverse;
+  }
+
+  .writer {
+    display: flex;
+    align-items: center;
+    flex-direction: column-reverse;
+    margin-top: 16px;
+    margin-right: 0;
+  }
+  .name{
+    padding-bottom:4px;
+    font-size: 16px;
+    font-weight: bold;
+  }
+}

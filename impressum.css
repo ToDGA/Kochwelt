@@ -1,0 +1,19 @@
+body {
+    overflow-x: hidden;
+    font-family: 'Raleway';
+    height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+}
+
+.impressum {
+    height: 100%;
+    max-width: 1440px;
+    margin: 64px auto;
+    padding: 0 5%;
+}
+
+
+

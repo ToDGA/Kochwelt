@@ -1,0 +1,57 @@
+.footer-background{
+    background-color: #615e5e;
+}
+
+.footer {
+    max-width: 1440px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-bottom: 0;
+    margin-top: 16px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+/* Logo ist schwarz - Filter: um Logo weiß zu machen, bessere Sichtbarkeit für dunkeln Hintergrund */
+.logo_footer {
+    /* margin-left:5%; */
+    width: 246px;
+    filter: invert(93%) sepia(6%) saturate(14%) hue-rotate(81deg) brightness(111%) contrast(98%);
+}
+
+.logo_footer:hover {
+    text-decoration: underline;
+    color: #008000;
+    filter: invert(26%) sepia(98%) saturate(1150%) hue-rotate(91deg) brightness(45%) contrast(104%);
+}
+
+.footerLinks {
+    color: white;
+    font-family: "Raleway", sans-serif;
+    font-size: 24px;
+    font-weight: normal;
+    text-decoration: none;
+    margin-left: 16px;
+}
+
+.footerLinks:hover{
+    text-decoration: underline;
+    color: #008000;
+    filter: invert(26%) sepia(98%) saturate(1150%) hue-rotate(91deg) brightness(45%) contrast(104%);
+}
+
+@media (max-width:440px){
+    .footerLinks{
+        display:none;
+    }
+
+    .logo_footer{
+        width:100%;
+        display:flex;
+        justify-content: center;
+        
+    }
+}
